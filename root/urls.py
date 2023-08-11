@@ -1,7 +1,5 @@
 from django.urls import path as pt
 from . import views
-from django.conf import settings
-from django.conf.urls.static import static
 
 
 app_name='root'
@@ -9,5 +7,8 @@ app_name='root'
 
 urlpatterns = [
     pt('',views.home , name='home'),
+    pt('trainers',views.trainers , name='trainers'),
+    pt('about',views.trainers , name='about'),
+    pt('contact',views.contact , name='contact'),
 ]
 
